@@ -1,0 +1,35 @@
+---
+title: "My Data Visualization Collection"
+author: "by Orhan Aktas"
+date: '2022-08-17'
+output:   
+    html_document:
+      df_print: !expr knitr::kable
+      toc: yes
+      number_sections: yes
+      toc_depth: 2
+---
+
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  class.source = "bg-warning text-warning"
+)
+```
+
+#### Required Libraries {.unlisted .unnumbered}
+
+```{r libraries, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+library(rvest)
+library(ggthemes)
+library(ggtext)
+library(tidyquant)
+
+```
+
+# Introduction
+

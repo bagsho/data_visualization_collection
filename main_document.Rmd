@@ -32,7 +32,56 @@ library(patchwork)
 
 # Introduction
 
-## radar charts
+This collection includes my own examples for various chart types. I have decided to use the categorization made by [The R Graph Gallery webpage](https://r-graph-gallery.com/).
+
+It divides the charts in 6 distinct categories.
+
+-   Distribution
+
+-   Correlation
+
+-   Ranking
+
+-   Part of a whole
+
+-   Evolution
+
+-   Flow
+
+# My Portfolio
+
+## Distribution
+
+### Violin
+
+### Density
+
+### Histogram
+
+### Boxplot
+
+### Ridgeline
+
+## Correlation
+
+### Scatter
+
+### Heatmap
+
+### Correlogram
+
+### Bubble
+
+### Connected scatter
+
+### Density 2d
+
+## Ranking
+
+### Barplot
+
+### Spider / Radar
+
 ```{r}
  data <- read_excel("data/datasets.xlsx", sheet = "radar")
 ```
@@ -56,8 +105,6 @@ scenarios <- data %>%
   cbind(scenarios) %>% 
   column_to_rownames(var = "value")
 ```
-
-
 
 ```{r }
   # Simple Pie Chart
@@ -93,6 +140,51 @@ scenarios <- data %>%
 dev.off()
 
 ```
-ggradar will be experimented. 
-figpatch can patch external image such as png.
 
+ggradar will be experimented. figpatch can patch external image such as png.
+
+### Wordcloud
+
+### Parallel
+
+### Lollipop
+
+### Circular Barplot
+
+## Part of a whole
+
+### Grouped and Stacked barplot
+
+### Treemap
+
+### Doughnut
+
+### Pie chart
+
+### Dendrogram
+
+### Circular packing
+
+## Evolution
+
+### Line plot
+
+### Area
+
+### Stacked area
+
+### Streamchart
+
+### Time Series
+
+## Flow
+
+### Chord diagram
+
+### Network
+
+### Sankey
+
+### Arc diagram
+
+### Edge bundling
